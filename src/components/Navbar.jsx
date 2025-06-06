@@ -5,13 +5,13 @@ export default function Navbar() {
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.home}>
-        <a href="/#home" className={styles.jesi}>Jesi</a>
-        <a href="/#home" className={styles.carey}>Carey</a>
+        <Link to="/" className={styles.jesi}>Jesi</Link>
+        <Link to="/" className={styles.carey}>Carey</Link>
       </div>
       <div className={styles.navLinks}>
-        <a href="/#work" className={styles.work}>Work</a>
-        <a href="/#info" className={styles.info}>Info</a>
-        <a href="/#connect" className={styles.connect}>Connect</a>
+        <Link to="/work" className={styles.work}>Work</Link>
+        <Link to="/info" className={styles.info}>Info</Link>
+        <Link to="/connect" className={styles.connect}>Connect</Link>
       </div>
     </div>
   );

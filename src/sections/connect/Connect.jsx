@@ -19,17 +19,17 @@ export default function Connect() {
           <div className={styles.details}>
             <div className={styles.text}>
               <Mail size={14} />
-              <a href="mailto:dummy@dummy.com" className={styles.value}>Email Me!</a>
+              <a href="mailto:jesi.s.domingo@gmail.com" className={styles.value}>Email Me!</a>
             </div>
             <div className={styles.text}>
               <GitHub size={14} />
-              <a href="https://github.com/yourusername" className={styles.value} target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/jsdomingo" className={styles.value} target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
             </div>
             <div className={styles.text}>
               <Linkedin size={14} />
-              <a href="https://via.placeholder.com/150" className={styles.value} target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/jesi-carey-444820118/" className={styles.value} target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
             </div>
