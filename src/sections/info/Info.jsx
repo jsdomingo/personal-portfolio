@@ -5,6 +5,7 @@ import styles from './Info.module.css'
 import Experience from './Experience'
 import Competencies from './Competencies'
 import Stack from './Stack'
+import Jesi from './logo/Jesi_notion.png'
 
 export default function Info() {
   return (
@@ -32,7 +33,7 @@ export default function Info() {
           </div>
           <a href="/JesiCarey_CV2025_4.pdf" download className={styles.btn}>Download Resume</a>
         </div>
-        <img src="/Jesi_notion.png" alt="Jesi Carey" className={styles.image} />
+        <img src={Jesi} alt="Jesi Carey" className={styles.image} />
       </div>
 
       <motion.div
