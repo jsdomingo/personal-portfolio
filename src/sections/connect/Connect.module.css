@@ -1,0 +1,101 @@
+.container {
+  padding-bottom: 20px;
+  padding-top: 75px;
+  width: 100%;
+  max-width: 1070px;
+  margin: 0 auto;
+  margin-bottom: 10em;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  height: 320px;
+  margin: 20px auto;
+  object-fit: cover;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+  gap: 40px;
+}
+
+h2 {
+  margin: 0;
+  align-self: start;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 50%;
+}
+
+.text {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add space between the icon and text */
+}
+
+.key, .value {
+  margin: 0;
+}
+
+.key {
+  color: grey;
+}
+
+.value {
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.value:hover {
+  color: #007BFF; 
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 69%;
+  }
+  .content {
+      grid-template-columns: 1fr; /* Stack the content on smaller screens */
+  }
+
+  .details {
+      margin-left: 0;
+      align-items: center;
+  }
+
+  .img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  h2 {
+    text-align: center;
+}
+}
+
+
+@media (min-width: 1730px) and (max-width: 2560px) {
+  .container {
+    width: 100%;
+    max-width: 1070px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .container {
+    width: 100%;
+    max-width: 850px;
+  }
+
+}

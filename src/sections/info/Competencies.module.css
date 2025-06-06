@@ -1,0 +1,22 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .card {
+    padding: 10px 16px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+
+
+  @media (max-width: 768px) {
+    .grid {
+      gap: 3px;
+      width: 69%;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+  }
+  

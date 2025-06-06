@@ -1,0 +1,184 @@
+.container {
+  width: 100%;
+  max-width: 1070px;
+  height: 610px;
+  align-items: center;
+  position: relative;
+  border-style: hidden;
+  margin: 0 auto;
+  padding-bottom: 124px;
+  padding-top: 30px;
+}
+
+.topSentence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.star,
+.text {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.star {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.text {
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  padding-bottom: 1.5rem;
+}
+
+.solid {
+  border: 0;
+  border-top: 3px solid black;
+  width: 64px;
+}
+
+.top,
+.bottom {
+  margin: 0;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.topWrapper {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headline {
+  position: relative;
+  height: 100%;
+  min-height: 300px;
+}
+
+.bottomGroup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-17%, -50%);
+}
+
+.bottom {
+  margin: 0;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.blurb {
+  position: absolute;
+  left: -20px;
+  top: 10%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  font-size: 14px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.bottomLine {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  border: 0;
+  border-top: 3px solid black;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: 5.2em;
+    width: 69%;
+    margin: 0 auto;
+    max-height: 600px;
+  }
+  .text {
+    font-size: small;
+  }
+
+  .top,
+  .bottom {
+    font-size: 9em;
+    text-align: center;
+  }
+
+  .headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topWrapper {
+    order: 1; 
+    margin: 0;
+    padding: 0;
+  }
+
+  .solid {
+    order: 0; 
+    margin-bottom: 1rem;
+  }
+
+  .bottomGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    order: 2;
+  }
+
+  .bottom {
+    order: 1;
+    padding-bottom: 100px;
+  }
+
+  .blurb {
+    order: 3; 
+    font-size: small;
+    text-align: center;
+    position: static !important;
+    transform: none !important;
+    padding-bottom: 200px;
+  }
+
+  .bottomLine {
+    order: 3; 
+    width: 64px;
+    margin-top: 4rem;
+    top: 55%;
+  }
+
+  .topWrapper,
+  .bottomGroup {
+    transform: none !important;
+    top: auto !important;
+    left: auto !important;
+    position: static !important;
+  }
+}
+
+
+
+@media (min-width: 1730px) and (max-width: 2560px) {
+  .container {
+    padding-bottom: 595px;
+  }
+
+  .bottomLine {
+    top: 48%;
+
+  }
+
+}

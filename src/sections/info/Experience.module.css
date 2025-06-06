@@ -1,0 +1,43 @@
+  .expandableContent {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    /* gap: 20px; */
+    padding: 16px 0; 
+    font-family: "Spline Sans Mono", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    padding-right: 2.5em;
+  }
+  
+  .description {
+    flex: 1;
+    text-align: justify;
+
+  }
+
+  @media (max-width: 768px) {
+    .expandableContent {
+      flex-direction: column;
+      gap: 12px;
+      padding-right: 0;
+    }
+  
+    .description {
+      text-align: left;
+    }
+  
+    .duration {
+      width: 100% !important;
+      margin-bottom: 8px;
+    }
+  
+    .MuiTableCell-root {
+      font-size: 12px !important;
+      padding: 8px 4px !important;
+      white-space: normal !important;
+    }
+  }
+  

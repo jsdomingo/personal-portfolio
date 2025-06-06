@@ -1,0 +1,145 @@
+.container {
+    /* outline: dashed red; */
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+  
+  .title {
+    font-size: 8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  .link {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background-color: darkred;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
+  }
+  
+  .link:hover {
+    color: darkred;
+  }
+  
+  .link:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .customBulletList {
+    list-style: none;
+    padding-left: 1em;
+  }
+  
+  .customBulletList li::before {
+    content: '✦';
+    color: #333;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    padding-left: 10px;
+  }
+
+
+  .topSection{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectLinkDemo{
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+    padding-top: 10px;
+  }
+
+
+  .projectDemoGif{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  /* AI Fragrance Section */
+  .pageWrapper {
+    padding: 2rem;
+ 
+  }
+  
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  /* Left column - Overview in first row */
+  .overview {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  /* Left column - Features in second row */
+  .features {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  /* Right column - image spans both rows */
+  .imageContent {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageContent img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .fragranceDetails{
+   padding-left: 30px;
+  }
+  
+  /* AI Fragrance Section ENDS*/
+
+  .backlogged {
+    background-color: #fff3cd; /* light yellow */
+    color: #856404; /* dark gold/brown for good contrast */
+    border: 1px solid #ffeeba;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .forkastGif {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+  
